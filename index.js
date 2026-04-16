@@ -57,7 +57,28 @@ process.on("SIGINT", shutdown);
 process.on("SIGTERM", shutdown);
 
 function printBanner({ port, tunnelUrl, configDir, logs, version }) {
+  const getWiseWords = () => {
+    if (Math.random() > 0.2) {
+      return "Hello!"
+    }
+
+    const wiseWords = [
+      "Prompt engineering: turning \'do it\' into a 200-word essay", 
+      "Never put off until tomorrow what you can put off forever",
+      "Nothing is as permanent as a temporary solution that works",
+      "Compatibility means deliberately repeating other people\'s mistakes",
+      "“I use AI for boilerplate and still somehow get novel bugs",
+      "It's not a bug, it's an undocumented feature!",
+      "AI-generated code is just technical debt with better grammar",
+      "Prompt engineering = arguing with autocomplete",
+    ]
+    return wiseWords[Math.floor(Math.random() * wiseWords.length)];
+  }
+
   const lines = [
+    ``,
+    `彡(._.)ミ ${getWiseWords()}`,
+    `  ^   ^`,
     `claudsor v${version}`,
     `  local:   http://localhost:${port}`,
     `  tunnel:  ${tunnelUrl ?? "(disabled)"}`,

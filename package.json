@@ -1,6 +1,6 @@
 {
   "name": "claudsor",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "OpenAI-compatible proxy for Anthropic Claude, designed to plug into Cursor as a custom OpenAI Base URL.",
   "type": "module",
   "bin": {
