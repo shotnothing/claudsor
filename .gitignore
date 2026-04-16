@@ -1,0 +1,9 @@
+node_modules/
+logs/
+claude.txt
+token.json
+*.log
+.env
+.env.*
+.DS_Store
+dist/

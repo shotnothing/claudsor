@@ -1,0 +1,48 @@
+{
+  "name": "claudsor",
+  "version": "0.3.0",
+  "description": "OpenAI-compatible proxy for Anthropic Claude, designed to plug into Cursor as a custom OpenAI Base URL.",
+  "type": "module",
+  "bin": {
+    "claudsor": "./index.js"
+  },
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "cli.js",
+    "paths.js",
+    "tunnel.js",
+    "auth.js",
+    "claude.js",
+    "server.js",
+    "translate.js",
+    "logger.js"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "localtunnel": "^2.0.2"
+  },
+  "keywords": [
+    "cursor",
+    "anthropic",
+    "claude",
+    "openai",
+    "proxy",
+    "responses-api",
+    "chat-completions"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shotnothing/claudsor.git"
+  },
+  "homepage": "https://github.com/shotnothing/claudsor#readme",
+  "bugs": {
+    "url": "https://github.com/shotnothing/claudsor/issues"
+  }
+}
