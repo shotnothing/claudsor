@@ -4,7 +4,7 @@
   "description": "OpenAI-compatible proxy for Anthropic Claude, designed to plug into Cursor as a custom OpenAI Base URL.",
   "type": "module",
   "bin": {
-    "claudsor": "./index.js"
+    "claudsor": "index.js"
   },
   "main": "./index.js",
   "files": [
@@ -36,7 +36,6 @@
     "responses-api",
     "chat-completions"
   ],
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shotnothing/claudsor.git"
