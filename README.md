@@ -6,15 +6,13 @@ Use Cursor with Claude money.
 
 ### Usage
 
-No installation needed! 
-
-Just run
+No installation needed! Just run:
 
 ```bash
 npx claudsor
 ```
 
-On first run, a browser tab opens for the Anthropic login page. Paste the returned code back into the terminal.
+A browser tab will open for Anthropic login. Paste the returned code back into the terminal.
 
 ![anthropic auth callback](docs/auth2.png)
 
