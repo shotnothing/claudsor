@@ -32,7 +32,7 @@ Paste into Cursor -> Settings -> Models -> OpenAI Base URL:
   https://grumpy-views-cross.loca.lt
 ```
 
-Paste the URL (in this case `https://grumpy-views-cross.loca.lt`) into **Cursor → Settings → Models → OpenAI Base URL**. You also need to put in something in the `OpenAI API Key` field, but it can be anything.
+Paste the URL (in this case `https://grumpy-views-cross.loca.lt`) into **Cursor Settings → Models → OpenAI Base URL**. You also need to put in something in the `OpenAI API Key` field, but it can be anything.
 
 ![cursor model settings](docs/auth3.png)
 
