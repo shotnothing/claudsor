@@ -58,16 +58,17 @@ process.on("SIGTERM", shutdown);
 
 function printBanner({ port, tunnelUrl, configDir, logs, version }) {
   const lines = [
-    "",
     `claudsor v${version}`,
     `  local:   http://localhost:${port}`,
     `  tunnel:  ${tunnelUrl ?? "(disabled)"}`,
     `  config:  ${configDir}`,
-    `  logs:    ${logs}`,
+  ];
+  if (logs) lines.push(`  logs:    ${logs}`);
+  lines.push(
     "",
     "Paste into Cursor -> Settings -> Models -> OpenAI Base URL:",
     `  ${tunnelUrl ?? `http://localhost:${port}`}`,
     "",
-  ];
+  );
   process.stdout.write(lines.join("\n"));
 }

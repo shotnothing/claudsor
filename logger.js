@@ -3,15 +3,17 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { logDir } from "./paths.js";
 
-function ensureDir() {
-  try { fs.mkdirSync(logDir(), { recursive: true }); } catch { /* ignore */ }
+function ensureDir(dir) {
+  try { fs.mkdirSync(dir, { recursive: true }); } catch { /* ignore */ }
 }
 
 function append(file, record) {
-  ensureDir();
+  const dir = logDir();
+  if (!dir) return;
+  ensureDir(dir);
   const line = JSON.stringify({ ts: new Date().toISOString(), ...record }) + "\n";
   try {
-    fs.appendFileSync(path.join(logDir(), file), line);
+    fs.appendFileSync(path.join(dir, file), line);
   } catch (e) {
     console.error(`[logger] failed to write ${file}:`, e.message);
   }

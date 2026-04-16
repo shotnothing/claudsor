@@ -8,7 +8,7 @@ Options:
       --no-tunnel        Do not start localtunnel
       --subdomain <name> Requested localtunnel subdomain
       --config-dir <p>   Override config dir (default: ~/.claudsor)
-      --log-dir <p>      Override log dir (default: <config-dir>/logs)
+      --log-dir <p>      Enable JSONL logging to this directory (default: disabled)
   -h, --help             Show this help
   -v, --version          Show version
 

@@ -32,5 +32,5 @@ export function tokenPath() {
 export function logDir() {
   if (logDirOverride) return logDirOverride;
   if (process.env.CLAUDSOR_LOG_DIR) return path.resolve(process.env.CLAUDSOR_LOG_DIR);
-  return path.join(baseDirPath(), "logs");
+  return null;
 }

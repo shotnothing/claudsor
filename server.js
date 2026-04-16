@@ -232,10 +232,7 @@ export function startServer(port = Number(process.env.PORT) || 5090) {
     }
   });
 
-  server.listen(port, () => {
-    console.log(`Responses-compatible endpoint: http://localhost:${port}`);
-    console.log(`Logs -> ${process.env.CLAUDSOR_LOG_DIR || "./logs"}/{input,output,errors}.jsonl`);
-  });
+  server.listen(port);
 
   return server;
 }
