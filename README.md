@@ -4,14 +4,14 @@ Use Cursor with Claude money.
 
 ## Quickstart
 
-### Installation
+### Usage
+
+No installation needed! 
+
+Just run
+
 ```bash
 npx claudsor
-```
-
-### Usage
-```bash
-claudsor
 ```
 
 On first run, a browser tab opens for the Anthropic login page. Paste the returned code back into the terminal.
