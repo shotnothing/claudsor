@@ -32,7 +32,7 @@ Paste into Cursor -> Settings -> Models -> OpenAI Base URL:
   https://grumpy-views-cross.loca.lt
 ```
 
-Paste the URL (in this case `https://grumpy-views-cross.loca.lt`) into **Cursor Settings → Models → API Keys → Override OpenAI Base URL**. (**IMPORTANT:** you need to be logged into a personal Cursor account, else enteprise privacy controls might disable this setting)
+Paste the URL (in this case `https://grumpy-views-cross.loca.lt`) into **Cursor Settings → Models → API Keys → Override OpenAI Base URL** (**IMPORTANT:** you need to be logged into a personal Cursor account, else enteprise privacy controls might disable this setting). 
 
 You also need to put in something in the `OpenAI API Key` field, but it can be anything.
 
