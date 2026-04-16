@@ -25,8 +25,8 @@ Logs -> ./logs/{input,output,errors}.jsonl
 claudsor v0.3.0
   local:   http://localhost:5090
   tunnel:  https://grumpy-views-cross.loca.lt
-  config:  C:\Users\JW\.claudsor
-  logs:    C:\Users\JW\.claudsor\logs
+  config:  ~\.claudsor
+  logs:    ~\.claudsor\logs
 
 Paste into Cursor -> Settings -> Models -> OpenAI Base URL:
   https://grumpy-views-cross.loca.lt
