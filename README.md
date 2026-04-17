@@ -4,7 +4,7 @@ Use Cursor with Claude money.
 
 ## Quickstart
 
-**Known Bugs**
+**Known Issues**
 - Sometimes Cursor returns `Provider Error` if you don't use it for a while. Workaround is to restart the app, and put in the new OpenAI Base Url. Will investigate and fix soon.
 
 ### Usage
