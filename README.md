@@ -7,6 +7,7 @@ Use Cursor with Claude money.
 **Known Issues**
 - Sometimes Cursor returns `Provider Error` if you don't use it for a while. Workaround is to restart the app, and put in the new OpenAI Base Url. Will fix soon.
 - `This model does not support assistant message prefill.` Will fix soon.
+- You need a paid Cursor account to use third-party models. I don't know what to do about this...
 
 ### Usage
 
